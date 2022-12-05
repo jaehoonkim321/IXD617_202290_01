@@ -1,0 +1,71 @@
+
+body {
+    background-color: black;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    border-style: dotted;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  h3 {
+    color: tomato;
+    border-style: groove;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  p {
+    color: white;
+    font-family: verdana;
+    font-size: 12px;
+  }
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+.page-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-wrapper section {
+    width: 100%;
+}
+.page-wrpper .main{
+    flex: 0 1 80;
+}
+page-wrapper .sidebar {
+    width: 250px;
+    flex:none;
+    
+}
+
+
+
+
+aside.sidebar {
+   
+    padding: 5%;
+}
+
+a{
+    color:black;
+    background: tomato;
+    padding:1px
+    width: 50%;
+    height: 100px;
+    overflow: scroll;
+   
+}
+
+#zen-supporting{
+  column-count: 2;
+}
