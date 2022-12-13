@@ -46,7 +46,7 @@
                     <input type="submit" class="form-button" value="Log in" data-role="none">
                 </div>
                 <div class="form-control" style="text-align:center; font-size: 0.7em">
-                    Don't have an account? <a href="#signup-page">Sign Up!</a>
+                    Don't have an account? <a href="#onboarding-page">Sign Up!</a>
                 </div>
             </form>
         </div>
@@ -82,6 +82,45 @@
         </div>
     </section>
 
+<!-- ONBOARDING PAGE -->
+<section data-role="page" id="onboarding-page">
+
+    <div data-role="main" class="display-flex flex-column">
+        <div class="flex-stretch onboarding-hero">
+            <img src="images/onboarding.png" alt="" style="width:20em;">
+            <h3 class="copy">Explore cities through street art</h3>
+            <p>The street artist tracker app helps people discover street art in different cities.</p>
+            
+        </div>
+        <form class="form" id="signin-form" data-ajax="false">
+            
+            <div class="form-control">
+                <a href="#onboarding-page2"><input type="submit" class="form-button" value="Next" data-role="none"></a>
+                <a href="#signin-page"><input type="submit" class="form-button" value="back" data-role="none" style="background-color:lightgray; margin-top: 16px;"></a>
+            </div>
+        </form>    
+
+    </div>
+</section>
+<section data-role="page" id="onboarding-page2">
+
+    <div data-role="main" class="display-flex flex-column">
+        <div class="flex-stretch onboarding-hero">
+            <img src="images/onboarding2.png" alt="" style="width:20em;">
+            <h3>Save your street art</h3>
+            <p>
+                Save locations, save street art and create your own collections</p>
+        </div>
+        <form class="form" id="signin-form" data-ajax="false">
+            
+            <div class="form-control">
+                <a href="#signup-page"><input type="submit" class="form-button" value="Sign Up" data-role="none"></a>
+                <a href="#onboarding-page"><input type="submit" class="form-button" value="back" data-role="none" style="background-color:lightgray; margin-top: 16px;"></a>
+            </div>
+        </form>    
+
+    </div>
+</section>
 
     <!-- RECENT PAGE -->
     <section data-role="page" id="recent-page">
@@ -183,7 +222,7 @@
     <!-- CHOOSE ANIMAL PAGE -->
     <section data-role="page" id="choose-animal-page">
         <header data-role="header">
-            <h1>Choose animal</h1>
+            <h1>Choose Artist</h1>
             <ul>
                 <li><a href="#" data-rel="back">Back</a></li>
                 <li class="flex-stretch"></li>
@@ -193,7 +232,7 @@
         <div data-role="main">
             <input type="hidden" id="location-animal-id">
             <input type="hidden" id="location-back" value="-2">
-            form for choose animal
+            
         </div>
     </section>
 
@@ -242,13 +281,23 @@
     <section data-role="page" id="user-profile-page">
         <div data-role="main">
             <div class="body"></div>
+            <div class="settings">
+                <li><a href="#user-edit-page">Edit User</a></li>
+                <li><a href="#password-edit-page">Edit Password</a></li>
+                <li><a href="#" class="js-logout">Log out</a></li>
+            </ul>
+        </div>
+            
 
-            <div class="floater top right">
+            <!--div class="floater top right">
                 <a href="#user-settings-page">
                     <img class="icon" style="font-size:1.3em" src="images/icons/menu.png" />
                 </a>
-            </div>
+                
+            </div-->
+            
         </div>
+        <div></div>
         <footer data-role="footer">
             <div data-role="footer" class="nav-mobile icon-labels">
                 <ul class="text-center">
@@ -396,7 +445,7 @@
     <!-- ANIMAL EDIT PAGE -->
     <section data-role="page" id="animal-edit-page">
         <header data-role="header">
-            <h1>Edit Animal</h1>
+            <h1>Edit Artist</h1>
             <ul>
                 <li><a href="#" data-rel="back">Back</a></li>
                 <li class="flex-stretch"></li>
@@ -416,7 +465,7 @@
     <!-- ANIMAL ADD PAGE -->
     <section data-role="page" id="animal-add-page">
         <header data-role="header">
-            <h1>Add an Animal</h1>
+            <h1>Add an Artist</h1>
             <ul>
                 <li><a href="#" data-rel="back">Back</a></li>
                 <li class="flex-stretch"></li>

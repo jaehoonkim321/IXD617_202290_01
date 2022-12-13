@@ -170,11 +170,11 @@ a {
     border-width: 1px;
     border-color: var(--color-neutral-light);
     border-style: solid;
-    border-radius: 0.2em;
+    border-radius: 10em;
     padding: 0.5em 1em;
     display: inline-block;
     width: 100%;
-    font: inherit;
+    font: inherit
 }
 .form-button {
     background-color: #6B4DE0;
@@ -185,7 +185,7 @@ a {
     width: 100%;
     font: inherit;
     text-align: center;
-    color: inherit;
+    color: white;
 }
 .form-button:hover {
     text-decoration: none;
@@ -207,8 +207,8 @@ a {
     align-items: center;
 }
 .hero-icon {
-    width: 80vw;
-    aspect-ratio: 1 / 1;
+    width: 90vw;
+    
 
 }
 
@@ -414,6 +414,7 @@ a {
 }
 .animallist-name {
     font-size: 1.1em;
+    font-weight: 400;
 }
 
 
@@ -487,19 +488,27 @@ a {
 
 
 .user-profile-image img {
-    width:100%;
+    width: 100%;
     object-fit: cover;
     aspect-ratio: 1/ 1;
     border-radius: 50%;
-    padding:4em;
-}
-.user-profile-body {
-    padding:2em;
-}
-.user-profile-name {
-    font-weight:1.5em;
+    padding: 8em;
+    margin-bottom: -100px;
+
+    
 }
 
+.user-profile-name {
+    font-weight:1.5em;
+    font-size: 21px;
+    text-align: center;
+
+    
+}
+.user-profile-email{
+    padding-bottom: 60px;
+    text-align: center;
+}
 
 .body {
     height:100%;
@@ -534,6 +543,7 @@ a {
 }
 .settings li {
     padding: 1em 1em;
+    display: flex;
 
 }
 .settings li~li {
@@ -591,9 +601,6 @@ a {
 
 
 
-
-
-
 /* nav추가 */
 .icon-labels .icon-img {
     height: calc(var(--header-height) * 0.6);
@@ -607,4 +614,42 @@ a {
     font-size: 0.8em;
     display: block;
     color: var(--color-neutral-medium);
+}
+
+
+/* onboarding */
+
+.onboarding-hero {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.animallist-type {
+    font-size: 12px;
+}
+.animallist-breed{
+    font-size: 12px;
+}
+
+
+
+
+.cover-photo {
+  
+    background:url('https://images.unsplash.com/photo-1611063158871-7dd3ed4a2ac8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    z-index: -2;
+}
+
+p{
+    text-align: center;
+    margin: 20px;
+}
+h3{
+    margin:15px;
 }

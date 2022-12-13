@@ -14,11 +14,19 @@ export const makeAnimalList = templater(({id,name,type,breed,img})=>`
 
 export const makeUserProfilePage = ({name,email,username,img})=>`
 <div>
+<div class="cover-photo"></div>
     <div class="user-profile-image"><a href="#user-edit-photo-page"><img src="${img}"></a></div>
     <div class="user-profile-body">
+    
         <div class="user-profile-name">${name}</div>
-        <div class="user-profile-breed">@${username}</div>
+        
         <div class="user-profile-email">${email}</div>
+        <div class="settings">
+        <li><img src="images/icons/editt.png" alt=""><a href="#user-edit-page">Edit User</a></li>
+        <li><img src="images/icons/pass.png" alt=""><a href="#password-edit-page">Edit Password</a></li>
+        <li><img src="images/icons/logout.png" alt=""><a href="#" class="js-logout">Log out</a></li>
+    
+    </div>
     </div>
 </div>
 `
@@ -39,6 +47,7 @@ export const makeAnimalMapDescription = ({name,type,breed,img}) => {
             <h1>${name}</h1>
             <div>${type}</div>
             <div>${breed}</div>
+            
         </div>
     </div>`;
 }

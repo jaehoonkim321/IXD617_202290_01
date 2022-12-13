@@ -85,58 +85,46 @@ export const setMapBounds = (map_el,marker_locs=[]) => {
 
 
 
-const mapstyles = [
+const mapstyles =[
     {
-        "featureType": "all",
-        "elementType": "all",
+        "featureType": "administrative",
+        "elementType": "geometry",
         "stylers": [
             {
-                "saturation": "32"
-            },
-            {
-                "lightness": "-3"
-            },
-            {
-                "visibility": "on"
-            },
-            {
-                "weight": "1.18"
+                "color": "#9a83ac"
             }
         ]
     },
     {
         "featureType": "administrative",
-        "elementType": "labels",
+        "elementType": "labels.text.fill",
         "stylers": [
             {
-                "visibility": "off"
+                "color": "#64456b"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#b6a5ca"
             }
         ]
     },
     {
         "featureType": "landscape",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.man_made",
         "elementType": "all",
         "stylers": [
             {
-                "saturation": "-70"
-            },
-            {
-                "lightness": "14"
+                "color": "#a089b2"
             }
         ]
     },
     {
         "featureType": "poi",
-        "elementType": "labels",
+        "elementType": "all",
         "stylers": [
             {
                 "visibility": "off"
@@ -145,44 +133,104 @@ const mapstyles = [
     },
     {
         "featureType": "road",
-        "elementType": "labels",
+        "elementType": "all",
         "stylers": [
             {
-                "visibility": "off"
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#a893b8"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "hue": "#7600ff"
+            },
+            {
+                "saturation": "30"
+            },
+            {
+                "lightness": "-17"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "lightness": "14"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": "-19"
+            },
+            {
+                "saturation": "-9"
             }
         ]
     },
     {
         "featureType": "transit",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
         "elementType": "all",
         "stylers": [
             {
-                "saturation": "100"
-            },
-            {
-                "lightness": "-14"
+                "visibility": "off"
             }
         ]
     },
     {
         "featureType": "water",
-        "elementType": "labels",
+        "elementType": "geometry.fill",
         "stylers": [
             {
-                "visibility": "off"
+                "color": "#9079a2"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#694486"
             },
             {
-                "lightness": "12"
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "color": "#76558f"
             }
         ]
     }
-];
+]
